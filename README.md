@@ -43,7 +43,7 @@ This repository contains the core model implementation, dataset interface, and e
   <img src="assets/over2.png" alt="TreeFusion model overview" width="700">
 </p>
 
-**Figure 1.** Overview of the TreeFusion framework. TreeFusion adopts a three-branch multimodal design to combine optical semantics, SAR structural information, and height-related priors. The optical branch is built on DINOv3, while the SAR and height branches provide complementary structural and geometric context for canopy height estimation in heterogeneous urban scenes.
+**Figure 1.** Overview of the TreeFusion framework. TreeFusion adopts a three-branch multimodal design to combine optical semantics, SAR-derived structural information, and height-related priors. The optical branch is built on DINOv3, while the SAR and height branches provide complementary structural and geometric context for canopy height estimation in heterogeneous urban scenes.
 
 ---
 
@@ -69,14 +69,7 @@ This repository contains the core model implementation, dataset interface, and e
 
 ## TreeFusion v1.0 Data Product
 
-TreeFusion v1.0 was further extended to generate two geospatial products for the core urban regions of 50 U.S. cities:
-
-1. **Canopy Height Map**
-2. **Vegetation Mask**
-
-The data product is available on Zenodo:
-
-https://zenodo.org/records/20192536
+TreeFusion v1.0 was further extended to generate two geospatial products for the core urban regions of 50 U.S. cities: **Canopy Height Map** and **Vegetation Mask**. The data product is available on Zenodo: https://zenodo.org/records/20192536
 
 Reported performance:
 
@@ -94,16 +87,22 @@ R²  = 0.71
 
 ## Acknowledgements
 
-TreeFusion builds upon the DINOv3 vision foundation framework and benefits from the open research ecosystem around self-supervised visual representation learning. We sincerely acknowledge the DINOv3 team and related open-source contributors for releasing their models and codebase. If you use TreeFusion in your research, please cite both this project and the relevant DINOv3 work. The citation information will be updated with the latest link after the manuscript or data product is formally released. 
-Please also cite the official DINOv3 paper and repository when using TreeFusion.
+TreeFusion builds upon the DINOv3 vision foundation framework and benefits from the open research ecosystem around self-supervised visual representation learning. We sincerely acknowledge the DINOv3 team and related open-source contributors for releasing their models and codebase.
+
+If you use TreeFusion in your research, please cite both this project and the relevant DINOv3 work. Please also follow the official DINOv3 paper, repository, and license requirements when using DINOv3-based components or pretrained weights.
+
+The latest citation link will be updated after the manuscript or data product is formally released.
+
 ---
 
 ## License
 
-This project is released under the license provided in `LICENSE.md`.
-Please also follow the license requirements of DINOv3 and any third-party pretrained weights used in this project.
+This project is released under the license provided in `LICENSE.md`. Please also follow the license requirements of DINOv3 and any third-party pretrained weights used in this project.
+
 ---
 
 ## Contact
-If you have any questions about the project details, please contact us through: taige@vt.edu. This project's code and text were polished by CHATGPT5.1 and we' ve checked the correctness. 
 
+For questions about the project, please contact: taige@vt.edu.
+
+The code comments and README text were polished with assistance from ChatGPT and manually reviewed by the authors.
